@@ -1,0 +1,15 @@
+# Environment variables (contains MongoDB password - NEVER commit this)
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
