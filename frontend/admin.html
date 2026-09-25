@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard - College Service Requests</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container wide">
+    <h1>Admin Dashboard</h1>
+    <p class="subtitle">All submitted service requests</p>
+
+    <button id="refreshBtn">Refresh</button>
+
+    <table id="requestsTable">
+      <thead>
+        <tr>
+          <th>Request ID</th>
+          <th>Name</th>
+          <th>ID Number</th>
+          <th>Role</th>
+          <th>Service</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>Update</th>
+        </tr>
+      </thead>
+      <tbody id="requestsTableBody">
+        <!-- Rows inserted here by JavaScript -->
+      </tbody>
+    </table>
+
+    <p id="noDataMsg" class="hidden">No requests found yet.</p>
+
+    <p class="admin-link"><a href="index.html">← Back to Request Form</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

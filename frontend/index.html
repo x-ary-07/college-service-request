@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>College Service Request System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>College Service Request System</h1>
+    <p class="subtitle">Submit a request for Bonafide Certificate, ID Card, Hostel, Transport, Library, or IT Support.</p>
+
+    <form id="requestForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required />
+
+      <label for="id_number">Student ID / Employee ID</label>
+      <input type="text" id="id_number" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+
+      <label for="role">Role</label>
+      <select id="role" required>
+        <option value="">-- Select --</option>
+        <option value="Student">Student</option>
+        <option value="Faculty">Faculty</option>
+      </select>
+
+      <label for="service_type">Service Type</label>
+      <select id="service_type" required>
+        <option value="">-- Select --</option>
+        <option value="Bonafide Certificate">Bonafide Certificate</option>
+        <option value="ID Card">ID Card</option>
+        <option value="Hostel">Hostel</option>
+        <option value="Transport">Transport</option>
+        <option value="Library">Library</option>
+        <option value="IT Support">IT Support</option>
+      </select>
+
+      <label for="description">Description</label>
+      <textarea id="description" rows="4" required></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+
+    <div id="resultBox" class="result-box hidden">
+      <h3>Request Submitted!</h3>
+      <p><strong>Request ID:</strong> <span id="resultId"></span></p>
+      <p><strong>Status:</strong> <span id="resultStatus"></span></p>
+    </div>
+
+    <div id="errorBox" class="error-box hidden"></div>
+
+    <p class="admin-link"><a href="admin.html">Go to Admin Dashboard →</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
